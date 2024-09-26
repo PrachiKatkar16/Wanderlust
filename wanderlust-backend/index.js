@@ -8,8 +8,10 @@ const PORT=process.env.PORT || 5000
 const app=express();
 app.use(express.json())
 app.use(cors({
-    origin:'*'
-}))
+    origin: 'http://localhost:5173', // Allow requests from this origin
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
+    credentials: true // If you need to send cookies
+  }));
 app.get('/',(req,res)=>{
     res.send("server is working fine")
 })

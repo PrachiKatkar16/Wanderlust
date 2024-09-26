@@ -32,8 +32,8 @@ const UserSchema = new mongoose.Schema(
       type: {
         type: String,
         required: true,
-        // enum :["user","admin"],
-        // default : "users"
+        enum :["user","admin"],
+        default : "user"
       },
       pic: {
         type: String,

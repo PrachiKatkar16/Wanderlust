@@ -1,0 +1,42 @@
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px; /* Adjust padding if necessary */
+    height: 90px;
+  }
+  
+  .logo {
+    width: 120px; /* Increased logo size */
+    margin-top: 0px;
+  }
+  
+  .nav-link {
+    font-size: 20px; /* Increased font size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black; /* Changed color */
+    font-weight: 600; /* Changed font weight */
+    margin-left: 16px; /* Space between logo and link */
+    margin-right: 16px; /* Space between link and other elements */
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: none; 
+    color: #2b6cb0; /* Changed color on hover */
+  }
+  
+  .sign-in-button {
+    background-color: red; /* Button background color */
+    color: white; /* Button text color */
+    border-radius: 50px; /* Rounded button */
+    font-size: 16px; /* Adjust font size if needed */
+    padding: 10px;
+    width: 120px;
+    margin-left: 30px;
+  }
+  .navbar-search{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  

@@ -4,6 +4,7 @@ const connection=require('./config/db')
 const userRoutes=require('./routes/user.route')
 const imageRoutes = require('./routes/image.route');
 const tripRoutes = require('./routes/trip.route')
+const cityRoutes=require('./routes/cities.route')
 require('dotenv').config()
 const PORT=process.env.PORT || 5000
 const app=express();
@@ -19,6 +20,7 @@ app.get('/',(req,res)=>{
 app.use('/auth', userRoutes);
 app.use('/images', imageRoutes);
 app.use('/trips', tripRoutes);
+app.use('/cities',cityRoutes)
 
 app.listen(PORT,async()=>{
     try {

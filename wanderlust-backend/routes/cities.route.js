@@ -22,5 +22,12 @@ router.post('/add-city', async (req, res) => {
         res.status(500).json({ error: 'Error adding city', details: error });
     }
 });
-
+router.get('/all', async (req, res) => {
+    try {
+      const cities = await CityModel.find({});
+      res.json(cities);
+    } catch (error) {
+      res.status(500).json({ error: 'Error fetching cities', details: error });
+    }
+  });
 module.exports = router;
